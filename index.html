@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pricing Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins.wght@300,400,500,600,700,800&display=swap"rel=stylesheet>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="hero">
+            <div class="hero-eyebrow">✦ No hidden fees</div>
+            <h1>Simple, <span>Transparent</span><br>Pricing</h1>
+            <p>The most advanced customer support tools with a simple and affordable pricing. And you can always try for 30 days, free!</p>
+        </div>
+
+        <div class="cards-wrapper">
+            <div class="card" id="card-basic" onclick="selectCard('basic')">
+                <div class="selected-badge">✓ Plan Selected</div>
+                <div class="card-header"><span class="plan-name">Basic</span></div>
+                <div class="price"><sup>$</sup><span class="amount">4</span><span class="period">/month</span></div>
+                <div class="features">
+                    <p><span class="check-wrap"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8.3" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>10 Projects</p>
+                    <p><span class="check-wrap"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8.3" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>10 Pages</p>
+                    <p><span class="check-wrap"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8.3" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>100 Mb Disk Space</p>
+                </div>
+                <button class="btn-buy" onclick="buyNow(event, 'Basic - $4/month')">Get Started</button>
+            </div>
+            <div class="card featured" id="card-standard" onclick="selectCard('standard')">
+                <div class="popular-ribbon">⭐ Most Popular</div>
+                <div class="selected-badge">✓ Plan Selected</div>
+                <div class="card-header"><span class="plan-name">Standard</span><span class="save-badge">Save 15%</span></div>
+                <div class="price"><sup>$</sup><span class="amount">8</span><span class="period">/month</span></div>
+                <div class="card-divider"></div>
+                <div class="features">
+                    <p><span class="check-wrap"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8.3" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>20 Projects</p>
+                    <p><span class="check-wrap"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8.3" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>20 Pages</p>
+                    <p><span class="check-wrap"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8.3" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>200 Mb Disk Space</p>
+                </div>
+                <button class="btn-buy" onclick="buyNow(event, 'Standard - $8/month')">Get Started</button>
+            </div>
+            <div class="card" id="card-advanced" onclick="selectCard('advanced')">
+                <div class="selected-badge">✓ Plan Selected</div>
+                <div class="card-header"><span class="plan-name">Advanced</span></div>
+                <div class="price"><sup>$</sup><span class="amount">12</span><span class="period">/month</span></div>
+                <div class="card-divider"></div>
+                <div class="features">
+                    <p><span class="check-wrap"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8.3" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>40 Projects</p>
+                    <p><span class="check-wrap"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8.3" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>40 Pages</p>
+                    <p><span class="check-wrap"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8.3" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>500 Mb Disk Space</p>
+                </div>
+                <button class="btn-buy" onclick="buyNow(event, 'Advanced - $12/month')">Get Started</button>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <p class="section-label reveal">Have questions?</p>
+            <h2 class="faq-title reveal">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item reveal">
+                    <h4>How does the free trial work?</h4>
+                    <p>Start free for 30 days with no credit card required. You get full access to all features in your chosen plan and can cancel before the trial ends</p>
+                </div>
+                <div class="faq-item reveal">
+                    <h4>Can I cancel any time?</h4>
+                    <p>Yes, cancel anytime from your account settings. You'll keep full access until the end of your current billing period with no penalties</p>
+                </div>
+                <div class="faq-item reveal">
+                    <h4>Can I switch plan later?</h4>
+                    <p>Absolutely. Upgrade or downgrade at any time! Changes take effect immediately with prorated billing so you only pay for what you use.</p>
+                </div>
+                <div class="faq-item reveal">
+                    <h4>What payment methods do you accept?</h4>
+                    <p>We accept all major credit cards and PayPal. All transactions are encrypted and processed through our PCI-compliant payment gateway</p>
+                </div>
+            </div>
+        </div>
+        <div id="toast">🎉 Success! Redirecting to checkout...</div>
+        <script src="script.js"></script>
+    </body>
+</html>
